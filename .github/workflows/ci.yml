@@ -1,0 +1,51 @@
+name: CI
+
+# Runs on every pull request into main, and on main itself after a merge.
+# Vercel handles deployment via its Git integration, so this workflow is
+# purely the quality gate — it never deploys anything.
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+# A new push to the same branch cancels the previous in-flight run, so a
+# PR with several quick pushes doesn't queue up stale jobs.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Lint, typecheck & build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          # Matches the local development version.
+          node-version: 22
+          cache: npm
+
+      # `npm ci` installs strictly from package-lock.json and fails if the
+      # lockfile is out of sync with package.json — which is what we want in
+      # CI, unlike `npm install` which would silently "fix" it.
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
