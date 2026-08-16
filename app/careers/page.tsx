@@ -33,13 +33,13 @@ export default function CareersPage() {
         </Button>
       </PageHero>
 
-      {/* Life at Adibte */}
+      {/* Life at Arrowlite */}
       <Section>
         <Container>
           <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-5">
               <SectionHeader
-                eyebrow="Life at Adibte"
+                eyebrow="Life at Arrowlite"
                 title="What we actually offer"
                 description="Every contractor claims to invest in its people. Here is what that means in practice, in terms you can hold us to."
               />

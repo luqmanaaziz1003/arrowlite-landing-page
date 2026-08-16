@@ -86,7 +86,7 @@ export default async function ArticlePage(props: PageProps<"/news/[slug]">) {
 
       <Section tone="muted">
         <Container>
-          <h2 className="text-2xl font-semibold tracking-tight">More from Adibte</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">More from Arrowlite</h2>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {related.map((item) => (
               <li key={item.slug} className="flex">

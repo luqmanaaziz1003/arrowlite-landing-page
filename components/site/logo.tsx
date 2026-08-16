@@ -36,23 +36,13 @@ export function Logo({
         />
         <circle cx="16" cy="24" r="2.2" className="fill-brand" />
       </svg>
-      <span className="flex flex-col leading-none">
-        <span
-          className={cn(
-            "text-[0.95rem] font-semibold tracking-tight",
-            tone === "ink" && "text-ink-foreground"
-          )}
-        >
-          {site.name}
-        </span>
-        <span
-          className={cn(
-            "mt-1 text-[0.6rem] font-medium tracking-[0.14em] uppercase",
-            tone === "ink" ? "text-ink-muted" : "text-muted-foreground"
-          )}
-        >
-          Energy Services
-        </span>
+      <span
+        className={cn(
+          "text-[0.95rem] font-semibold tracking-tight",
+          tone === "ink" && "text-ink-foreground"
+        )}
+      >
+        {site.name}
       </span>
     </Link>
   );

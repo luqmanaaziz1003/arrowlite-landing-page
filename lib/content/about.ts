@@ -6,6 +6,19 @@ export const vision =
 export const mission =
   "We keep energy assets running safely, reliably and within their environmental limits — by combining disciplined engineering, certified people and honest reporting on every scope we take on.";
 
+export type GroupCompany = {
+  name: string;
+  location: string;
+  isHq?: boolean;
+};
+
+export const groupOfCompanies: GroupCompany[] = [
+  { name: "Arrowlite Solutions Sdn Bhd", location: "Headquarters", isHq: true },
+  { name: "Arrowlite Solutions Engineering Sdn Bhd", location: "Sarawak" },
+  { name: "Arrowlite Solutions Engineering Services Sdn Bhd", location: "Sabah" },
+  { name: "Arrowlite Engineering Sdn Bhd", location: "Kemaman" },
+];
+
 export type Milestone = {
   year: string;
   title: string;
@@ -97,7 +110,7 @@ export const leadership: Leader[] = [
     name: "Nurul Hasyim",
     role: "Chief Executive Officer",
     initials: "NH",
-    bio: "Twenty-six years in upstream operations, previously head of asset integrity for a national oil company. Joined Adibte as CEO in 2018.",
+    bio: "Twenty-six years in upstream operations, previously head of asset integrity for a national oil company. Joined Arrowlite as CEO in 2018.",
   },
   {
     name: "Daud Rahman",
@@ -115,7 +128,7 @@ export const leadership: Leader[] = [
     name: "James Okoro",
     role: "HSE Director",
     initials: "JO",
-    bio: "Built process safety management systems for two major operators before taking responsibility for Adibte's HSE performance in 2020.",
+    bio: "Built process safety management systems for two major operators before taking responsibility for Arrowlite's HSE performance in 2020.",
   },
   {
     name: "Lim Wei Chen",
