@@ -7,16 +7,16 @@
  */
 
 export const site = {
-  name: "Adibte Energy",
-  legalName: "Adibte Energy Services Sdn. Bhd.",
-  tagline: "Integrated Offshore & Onshore Energy Services",
+  name: "Arrowlite Solutions Group",
+  legalName: "Arrowlite Solutions Sdn. Bhd.",
+  tagline: "Your reliable solutions partner",
   description:
-    "Adibte Energy delivers engineering, maintenance, inspection and logistics services to offshore and onshore oil and gas operators across Southeast Asia.",
-  url: "https://www.adibte-energy.example",
+    "Arrowlite Solutions Group delivers engineering, maintenance, inspection and logistics services to offshore and onshore oil and gas operators across Southeast Asia.",
+  url: "https://www.arrowlite-solutions.example",
   founded: 2009,
   contact: {
-    email: "enquiries@adibte-energy.example",
-    careersEmail: "careers@adibte-energy.example",
+    email: "enquiries@arrowlite-solutions.example",
+    careersEmail: "careers@arrowlite-solutions.example",
     phone: "+60 3 5555 0100",
     fax: "+60 3 5555 0101",
     emergency: "+60 12 555 0199",
@@ -62,7 +62,7 @@ export const mainNav: NavItem[] = [
   { label: "Projects", href: "/projects", description: "Completed and ongoing work" },
   { label: "Industries", href: "/industries", description: "Sectors we serve" },
   { label: "HSE", href: "/hse", description: "Health, safety and environment" },
-  { label: "Careers", href: "/careers", description: "Open roles and life at Adibte" },
+  { label: "Careers", href: "/careers", description: "Open roles and life at Arrowlite" },
   { label: "News", href: "/news", description: "Announcements and insights" },
   { label: "Contact", href: "/contact", description: "Offices and enquiries" },
 ];

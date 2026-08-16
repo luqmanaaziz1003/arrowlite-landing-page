@@ -15,14 +15,14 @@ export type Article = {
 export const articles: Article[] = [
   {
     slug: "east-natuna-hookup-award",
-    title: "Adibte Energy awarded East Natuna wellhead platform hook-up",
+    title: "Arrowlite Solutions Group awarded East Natuna wellhead platform hook-up",
     category: "Announcement",
     date: "2026-07-08",
     author: "Corporate Communications",
     excerpt:
       "The contract covers hook-up and commissioning of an unmanned wellhead platform and a 34 km subsea tie-in, with first gas targeted for 2026.",
     body: [
-      "Adibte Energy has been awarded the hook-up and commissioning contract for Nusantara Energy's East Natuna wellhead platform, extending our offshore construction presence in Indonesian waters.",
+      "Arrowlite Solutions Group has been awarded the hook-up and commissioning contract for Nusantara Energy's East Natuna wellhead platform, extending our offshore construction presence in Indonesian waters.",
       "The scope covers offshore hook-up of twelve topside modules, subsea tie-in to an existing production hub 34 kilometres away, instrumentation loop checking and pre-commissioning, followed by start-up support and performance testing.",
       "Mobilisation begins in the fourth quarter, with a peak offshore workforce of around 180 personnel. First gas is targeted for late 2026.",
       "\"This award reflects a decade of building offshore construction capability that travels,\" said Daud Rahman, Chief Operating Officer. \"The team executing East Natuna is largely the team that delivered Tapis-B, and that continuity is what clients are buying.\"",
@@ -37,7 +37,7 @@ export const articles: Article[] = [
     excerpt:
       "The milestone spans offshore campaigns, turnaround execution and supply base operations across three countries — and it belongs to the people who used their stop-work authority.",
     body: [
-      "Adibte Energy has recorded four million consecutive manhours without a lost time injury across all operating locations.",
+      "Arrowlite Solutions Group has recorded four million consecutive manhours without a lost time injury across all operating locations.",
       "It is worth being precise about what a number like this does and does not mean. It does not mean nothing went wrong. In the same period our workforce raised 3,180 hazard observations and we stopped work on 47 occasions, eleven of those on scopes that were already behind schedule.",
       "That is the actual mechanism behind the milestone. A stop-work authority that carries no consequence for the person using it is the only control that reliably catches the hazard nobody wrote down in the risk assessment.",
       "We report our safety performance in line with IOGP 423 and publish it to clients quarterly, including the results that are unflattering. The next milestone matters less than keeping the reporting culture that produced this one.",

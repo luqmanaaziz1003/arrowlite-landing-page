@@ -1,7 +1,7 @@
 import type { IconName } from "@/components/site/icon";
 
 export const hsePolicy =
-  "No scope of work is so urgent that it cannot be done safely. Every person working for Adibte Energy has the authority to stop a job, without consequence, if they believe it is unsafe — and the obligation to use it.";
+  "No scope of work is so urgent that it cannot be done safely. Every person working for Arrowlite Solutions Group has the authority to stop a job, without consequence, if they believe it is unsafe — and the obligation to use it.";
 
 export type HseMetric = {
   value: string;

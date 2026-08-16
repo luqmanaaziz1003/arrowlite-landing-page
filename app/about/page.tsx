@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Building2 } from "lucide-react";
 
 import { CtaBand } from "@/components/site/cta-band";
 import { Icon } from "@/components/site/icon";
@@ -8,6 +9,7 @@ import { StatGrid } from "@/components/site/stat-grid";
 import {
   accreditations,
   companyStats,
+  groupOfCompanies,
   leadership,
   milestones,
   mission,
@@ -30,6 +32,36 @@ export default function AboutPage() {
         description={`${site.name} was founded in ${site.founded} by four inspection engineers who believed integrity work was being treated as a paperwork exercise. That conviction still shapes how we operate.`}
         breadcrumbs={[{ label: "About Us" }]}
       />
+
+      {/* Group of companies */}
+      <Section tone="muted">
+        <Container>
+          <SectionHeader
+            eyebrow="Group of companies"
+            title={`${site.name}: a group of companies`}
+            description="Four registered entities operating across Peninsular and East Malaysia, each scoped to the region it serves."
+            align="center"
+          />
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {groupOfCompanies.map((company) => (
+              <div
+                key={company.name}
+                className="flex flex-col rounded-xl border border-border bg-card p-6"
+              >
+                <span className="flex size-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <Building2 className="size-5" />
+                </span>
+                <h3 className="mt-5 text-base leading-snug font-semibold tracking-tight">
+                  {company.name}
+                </h3>
+                <p className="mt-2.5 text-sm font-medium text-brand-strong">
+                  {company.isHq ? `${company.location} (HQ)` : company.location}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </Section>
 
       {/* Company history */}
       <Section>

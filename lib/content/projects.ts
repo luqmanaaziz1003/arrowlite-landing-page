@@ -134,7 +134,7 @@ export const projects: Project[] = [
   {
     slug: "terengganu-supply-base",
     title: "Terengganu Supply Base Expansion",
-    client: "Adibte Energy (internal)",
+    client: "Arrowlite Solutions Group (internal)",
     location: "Kemaman, Terengganu",
     status: "ongoing",
     period: "2025 – 2026",
