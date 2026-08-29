@@ -164,16 +164,28 @@ export const accreditations: Accreditation[] = [
   { code: "IOGP", label: "Reporting alignment" },
 ];
 
+export type License = { name: string; logo: string; width: number; height: number };
+
+/** width/height are each logo's real pixel dimensions, so object-contain scales them proportionally instead of letterboxing inside a mismatched box. */
+export const licenses: License[] = [
+  { name: "CIDB Malaysia", logo: "/images/cidb-logo.png", width: 629, height: 175 },
+  { name: "PETRONAS", logo: "/images/petronas-logo-0.png", width: 2640, height: 2684 },
+  { name: "Ministry of Finance", logo: "/images/ministry.of.finance.png", width: 227, height: 191 },
+];
+
 /** Client logos are represented as wordmarks until real assets are supplied. */
 export const clients: string[] = [
-  "Peninsular Gas",
-  "Borneo LNG",
-  "Nusantara Energy",
-  "Sabah Upstream",
-  "Sultanate Offshore",
-  "Straits Petroleum",
-  "Andaman Resources",
-  "Meridian Drilling",
+  "TecnimontHQC",
+  "Deleum",
+  "TDS",
+  "KBC",
+  "DCN",
+  "Integma Engineering",
+  "Elektro Serve",
+  "Excellift",
+  "NAZ Galaxy Group",
+  "Sapura Energy",
+  "DDS",
 ];
 
 export type Testimonial = {

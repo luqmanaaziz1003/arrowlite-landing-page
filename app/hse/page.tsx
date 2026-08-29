@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Siren } from "lucide-react";
 
 import { CtaBand } from "@/components/site/cta-band";
 import { Icon } from "@/components/site/icon";
@@ -157,34 +156,6 @@ export default function HsePage() {
               </li>
             ))}
           </ul>
-        </Container>
-      </Section>
-
-      {/* Emergency contact */}
-      <Section tone="muted" className="py-14 sm:py-16 lg:py-16">
-        <Container>
-          <div className="flex flex-col items-start gap-6 rounded-2xl border border-brand/30 bg-brand/8 p-8 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-start gap-4">
-              <span className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-brand text-brand-foreground">
-                <Siren className="size-5" />
-              </span>
-              <div>
-                <h2 className="text-lg font-semibold tracking-tight">
-                  24-hour emergency response
-                </h2>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  Incident reporting and emergency support for active scopes,
-                  answered around the clock.
-                </p>
-              </div>
-            </div>
-            <a
-              href={`tel:${site.contact.emergency.replace(/\s/g, "")}`}
-              className="shrink-0 font-mono text-xl font-semibold tracking-tight whitespace-nowrap tabular-nums hover:underline"
-            >
-              {site.contact.emergency}
-            </a>
-          </div>
         </Container>
       </Section>
 

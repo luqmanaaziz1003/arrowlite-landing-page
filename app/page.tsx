@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Quote, ShieldCheck } from "lucide-react";
+import { ArrowRight, ArrowUpRight, MapPin, Quote, ShieldCheck } from "lucide-react";
 
 import { CtaBand } from "@/components/site/cta-band";
 import { Icon } from "@/components/site/icon";
@@ -7,7 +8,7 @@ import { Container, Eyebrow, GridPattern, Section, SectionHeader } from "@/compo
 import { StatGrid } from "@/components/site/stat-grid";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { clients, companyStats, testimonials, values } from "@/lib/content/about";
+import { clients, companyStats, licenses, testimonials, values } from "@/lib/content/about";
 import { completedProjects, ongoingProjects } from "@/lib/content/projects";
 import { services } from "@/lib/content/services";
 import { site } from "@/lib/site";
@@ -85,24 +86,34 @@ export default function HomePage() {
           <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-5">
               <SectionHeader
-                eyebrow="Who we are"
-                title="An integrated services partner, not a body shop"
+                eyebrow="Hi there!"
+                title={`Welcome to ${site.legalName}`}
               />
             </div>
             <div className="space-y-5 text-base leading-relaxed text-muted-foreground lg:col-span-7">
               <p>
-                Founded in {site.founded} as a specialist inspection contractor,{" "}
-                {site.name} now employs more than 640 people across Malaysia,
-                Singapore and Indonesia. We hold scopes end to end — design,
-                fabricate, install, inspect and maintain — so that accountability
-                does not fragment across three subcontractors when something goes
-                wrong.
+                We are a Malaysian-owned engineering company incorporated in{" "}
+                {site.founded}, with a strong specialization in offshore crane
+                services. From inspection, maintenance, and operation support,
+                our dedicated team ensures that offshore lifting equipment
+                operates safely, reliably, and efficiently.
               </p>
               <p>
-                Most of the assets we work on were built to last twenty-five
-                years and have been producing for thirty-five. Extending that
-                life safely is a discipline of evidence: knowing what condition
-                the steel is actually in, and being willing to say so plainly.
+                Beyond our core expertise in offshore cranes, Arrowlite also
+                provides a diverse range of engineering and industrial
+                solutions. These include engineering design and consultation,
+                fabrication and installation, technical training, manpower
+                supply for both upstream and downstream operations, as well as
+                the trading of welding, cutting, and related industrial
+                equipment.
+              </p>
+              <p>
+                Our strength lies in combining specialized knowledge with
+                versatile capabilities, allowing us to support clients across
+                the oil and gas supply chain — both onshore and offshore. At
+                Arrowlite, we take pride in delivering solutions that are not
+                only cost-effective but also value-driven, ensuring our
+                clients receive the highest standards of service every time.
               </p>
               <Button asChild variant="link" className="h-auto p-0">
                 <Link href="/about">
@@ -282,11 +293,32 @@ export default function HomePage() {
         </Container>
       </Section>
 
+      {/* Register Licensed */}
+      <Section className="py-14 sm:py-16 lg:py-16">
+        <Container>
+          <Eyebrow className="justify-center text-muted-foreground">
+            Register Licensed
+          </Eyebrow>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-6">
+            {licenses.map((license) => (
+              <Image
+                key={license.name}
+                src={license.logo}
+                alt={license.name}
+                width={license.width}
+                height={license.height}
+                className="h-20 w-auto object-contain grayscale-0"
+              />
+            ))}
+          </div>
+        </Container>
+      </Section>
+
       {/* Clients */}
       <Section tone="muted" className="py-14 sm:py-16 lg:py-16">
         <Container>
           <Eyebrow className="justify-center text-muted-foreground">
-            Trusted by operators across the region
+            Our Client
           </Eyebrow>
           <ul className="mt-8 grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-4">
             {clients.map((client) => (
@@ -299,7 +331,7 @@ export default function HomePage() {
             ))}
           </ul>
           <p className="mt-8 text-center text-xs text-muted-foreground">
-            Client names shown are placeholders for layout purposes.
+            Client names shown are wordmarks; logo artwork can replace them once supplied.
           </p>
         </Container>
       </Section>
@@ -315,6 +347,40 @@ export default function HomePage() {
               { value: "47", label: "Jobs stopped on safety grounds", note: "Without consequence to the reporter" },
             ]}
           />
+        </Container>
+      </Section>
+
+      {/* Registered addresses */}
+      <Section tone="muted">
+        <Container>
+          <SectionHeader
+            eyebrow="Where we are"
+            title="Register Addressed"
+            align="center"
+            className="mx-auto"
+          />
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {site.offices.map((office) => (
+              <div
+                key={office.label}
+                className="rounded-xl border border-border bg-card p-6 text-center"
+              >
+                <span className="mx-auto flex size-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <MapPin className="size-5" />
+                </span>
+                <h3 className="mt-5 text-base font-semibold tracking-tight">
+                  {office.label}
+                </h3>
+                <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
+                  {office.lines.map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </p>
+              </div>
+            ))}
+          </div>
         </Container>
       </Section>
 

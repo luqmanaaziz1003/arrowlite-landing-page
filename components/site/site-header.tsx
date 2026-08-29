@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Mail, Menu, Phone, Siren, X } from "lucide-react";
+import { Mail, Menu, Phone, X } from "lucide-react";
 
 import { Logo } from "@/components/site/logo";
 import { Container } from "@/components/site/layout";
@@ -25,10 +25,7 @@ export function SiteHeader() {
   }
 
   const isActive = (href: string) =>
-    pathname === href || pathname.startsWith(`${href}/`);
-
-  // The final nav item (Contact) is promoted to a button in the bar.
-  const barNav = mainNav.filter((item) => item.href !== "/contact");
+    href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <header className="sticky top-0 z-50">
@@ -51,13 +48,6 @@ export function SiteHeader() {
               <Mail className="size-3.5" />
               {site.contact.email}
             </a>
-            <a
-              href={`tel:${site.contact.emergency.replace(/\s/g, "")}`}
-              className="flex items-center gap-1.5 font-medium text-brand transition-opacity hover:opacity-80"
-            >
-              <Siren className="size-3.5" />
-              24h Emergency
-            </a>
           </div>
         </Container>
       </div>
@@ -67,9 +57,9 @@ export function SiteHeader() {
         <Container className="flex h-16 items-center justify-between gap-4">
           <Logo />
 
-          <nav aria-label="Main" className="hidden lg:block">
+          <nav aria-label="Main" className="hidden flex-1 justify-center lg:flex">
             <ul className="flex items-center gap-1">
-              {barNav.map((item) => (
+              {mainNav.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}

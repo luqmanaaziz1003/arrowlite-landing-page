@@ -12,7 +12,7 @@ import { services } from "@/lib/content/services";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Offshore services, engineering, maintenance, inspection and logistics for oil and gas operators across Southeast Asia.",
+    "Engineering services, engineering, maintenance, inspection and logistics for oil and gas operators across Southeast Asia.",
 };
 
 export default function ServicesPage() {

@@ -24,7 +24,7 @@ export const projects: Project[] = [
     status: "completed",
     period: "2023 – 2024",
     year: 2024,
-    discipline: "Offshore Services",
+    discipline: "Engineering Services",
     summary:
       "Replacement of six production risers and associated clamps on a producing platform, executed across two weather windows with no loss of production from adjacent wells.",
     scope: [
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     status: "ongoing",
     period: "2025 – present",
     year: 2025,
-    discipline: "Offshore Services",
+    discipline: "Engineering Services",
     summary:
       "Hook-up and commissioning of an unmanned wellhead platform including subsea tie-in to an existing production hub 34 km away.",
     scope: [

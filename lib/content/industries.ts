@@ -22,7 +22,7 @@ export const industries: Industry[] = [
       "Limited offshore bed space and weather windows",
       "Production deferment cost of any shutdown",
     ],
-    relatedServices: ["offshore-services", "inspection", "maintenance"],
+    relatedServices: ["engineering", "inspection", "maintenance"],
   },
   {
     slug: "upstream-onshore",
@@ -87,6 +87,6 @@ export const industries: Industry[] = [
       "New material and monitoring requirements for CO₂ service",
       "Marine growth and fatigue on offshore wind foundations",
     ],
-    relatedServices: ["engineering", "inspection", "offshore-services"],
+    relatedServices: ["engineering", "inspection", "logistics"],
   },
 ];

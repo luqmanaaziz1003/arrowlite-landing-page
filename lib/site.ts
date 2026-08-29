@@ -11,37 +11,44 @@ export const site = {
   legalName: "Arrowlite Solutions Sdn. Bhd.",
   tagline: "Your reliable solutions partner",
   description:
-    "Arrowlite Solutions Group delivers engineering, maintenance, inspection and logistics services to offshore and onshore oil and gas operators across Southeast Asia.",
+    "Arrowlite Solutions Sdn. Bhd. is a Malaysian-owned engineering company specializing in offshore crane inspection, maintenance and operation support, alongside engineering design, fabrication, technical training and manpower supply for the oil and gas industry.",
   url: "https://www.arrowlite-solutions.example",
-  founded: 2009,
+  founded: 2019,
   contact: {
     email: "enquiries@arrowlite-solutions.example",
     careersEmail: "careers@arrowlite-solutions.example",
     phone: "+60 3 5555 0100",
     fax: "+60 3 5555 0101",
-    emergency: "+60 12 555 0199",
   },
   offices: [
     {
-      label: "Corporate Headquarters",
-      city: "Kuala Lumpur",
+      label: "HQ (Seremban)",
+      city: "Seremban",
       country: "Malaysia",
-      lines: ["Level 22, Menara Perdana", "Jalan Sultan Ismail", "50250 Kuala Lumpur"],
+      lines: [
+        "No. 448-D (1st Floor), Lorong Sri Pulai 31/1,",
+        "Taman Sri Pulai 2, Sikamat, 70400, Seremban,",
+        "Negeri Sembilan, Malaysia.",
+      ],
       phone: "+60 3 5555 0100",
     },
     {
-      label: "Operations Base",
-      city: "Kemaman",
+      label: "Branch Office/Yard (Terengganu)",
+      city: "Dungun",
       country: "Malaysia",
-      lines: ["Lot 4471, Kemaman Supply Base", "Telok Kalong", "24007 Kemaman, Terengganu"],
+      lines: [
+        "Lot 2478, Jalan Kelicap,",
+        "Kg. Cacar, 23100, Paka, Dungun,",
+        "Terengganu, Malaysia.",
+      ],
       phone: "+60 9 555 0140",
     },
     {
-      label: "Regional Office",
-      city: "Singapore",
-      country: "Singapore",
-      lines: ["18 Tuas Crescent", "#03-11 Marine Hub", "Singapore 638722"],
-      phone: "+65 6555 0170",
+      label: "Branch Office/Yard (Sarawak)",
+      city: "Miri",
+      country: "Malaysia",
+      lines: ["Lot 10807, Block 5 Senadin Industrial Area", "98000, Miri, Sarawak, Malaysia."],
+      phone: "+60 85 555 0170",
     },
   ],
   social: [
@@ -57,14 +64,10 @@ export type NavItem = {
 };
 
 export const mainNav: NavItem[] = [
-  { label: "About Us", href: "/about", description: "Our history, leadership and values" },
+  { label: "Home", href: "/", description: "Back to the homepage" },
   { label: "Services", href: "/services", description: "Engineering, maintenance, inspection, logistics" },
-  { label: "Projects", href: "/projects", description: "Completed and ongoing work" },
-  { label: "Industries", href: "/industries", description: "Sectors we serve" },
-  { label: "HSE", href: "/hse", description: "Health, safety and environment" },
-  { label: "Careers", href: "/careers", description: "Open roles and life at Arrowlite" },
-  { label: "News", href: "/news", description: "Announcements and insights" },
-  { label: "Contact", href: "/contact", description: "Offices and enquiries" },
+  { label: "Project", href: "/projects", description: "Completed and ongoing work" },
+  { label: "About us", href: "/about", description: "Our history, leadership and values" },
 ];
 
 export const footerNav: { title: string; items: NavItem[] }[] = [
@@ -80,11 +83,15 @@ export const footerNav: { title: string; items: NavItem[] }[] = [
   {
     title: "Capabilities",
     items: [
-      { label: "Offshore Services", href: "/services/offshore-services" },
-      { label: "Engineering", href: "/services/engineering" },
-      { label: "Maintenance", href: "/services/maintenance" },
-      { label: "Inspection", href: "/services/inspection" },
-      { label: "Logistics", href: "/services/logistics" },
+      { label: "Engineering Service", href: "/services/engineering" },
+      {
+        label: "Construction, Installation and Maintenance",
+        href: "/services/maintenance",
+      },
+      { label: "Diesel Engine Service", href: "/services/inspection" },
+      { label: "Welding and NDT", href: "/services/logistics" },
+      { label: "Marine & Subsea Services", href: "/services/marine-subsea" },
+      { label: "Hot Tapping", href: "/services/hot-tapping" },
     ],
   },
   {
