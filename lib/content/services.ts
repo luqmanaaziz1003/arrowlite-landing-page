@@ -14,75 +14,33 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "offshore-services",
-    title: "Offshore Services",
-    icon: "Waves",
-    summary:
-      "Topside and subsea support for fixed platforms, FPSOs and mobile offshore drilling units across the region.",
-    intro:
-      "Our offshore division provides multi-disciplinary crews, marine spread coordination and specialist equipment for work over water. From hook-up and commissioning of a new wellhead platform through to late-life integrity campaigns, we mobilise self-sufficient teams that live and work offshore for the duration of the scope.",
-    capabilities: [
-      {
-        title: "Hook-up & Commissioning",
-        description:
-          "Structural, mechanical, piping, electrical and instrumentation teams for greenfield and brownfield tie-ins.",
-      },
-      {
-        title: "Subsea Intervention",
-        description:
-          "ROV-supported inspection, pipeline stabilisation, riser repair and subsea structure installation.",
-      },
-      {
-        title: "Topside Fabrication",
-        description:
-          "On-site fabrication, module replacement and structural reinforcement carried out without shutting in production.",
-      },
-      {
-        title: "Marine Coordination",
-        description:
-          "Vessel chartering, spread management, and offshore logistics planning including personnel-on-board tracking.",
-      },
-    ],
-    deliverables: [
-      "Offshore execution plan and method statements",
-      "Dedicated OIM and offshore construction supervisors",
-      "Daily progress and POB reporting",
-      "As-built documentation and handover dossier",
-    ],
-    stats: [
-      { value: "42", label: "Offshore campaigns delivered" },
-      { value: "1.9M", label: "Offshore manhours" },
-      { value: "18", label: "Platforms supported" },
-    ],
-  },
-  {
     slug: "engineering",
-    title: "Engineering",
+    title: "Engineering Service",
     icon: "Compass",
     summary:
-      "Concept through detailed design for production facilities, pipelines and brownfield modifications.",
+      "Civil, structural and mechanical design backed by rigorous review and qualification for producing assets.",
     intro:
-      "Our in-house engineering team covers process, mechanical, structural, piping, electrical and instrumentation disciplines. We work in a single 3D model environment so that clash detection, material take-offs and constructability reviews happen before anything reaches the fabrication yard.",
+      "Our in-house engineering team covers civil, structural and mechanical disciplines. Every design is put through independent review and endorsement, validated with FMEA and FEA, and paired with fully developed welding procedures so that what reaches the field is qualified and repeatable.",
     capabilities: [
       {
-        title: "Conceptual & FEED Studies",
+        title: "Civil, Structural & Mechanical Design",
         description:
-          "Feasibility screening, option selection, cost estimation and front-end engineering design packages.",
+          "Civil, structural and mechanical design for new-build and brownfield oil and gas facilities.",
       },
       {
-        title: "Detailed Design",
+        title: "Design Review & Endorsement",
         description:
-          "Issued-for-construction drawings, 3D models, stress analysis and full material take-offs.",
+          "Independent review and endorsement of design packages prior to fabrication or construction.",
       },
       {
-        title: "Brownfield Modifications",
+        title: "FMEA & FEA",
         description:
-          "Tie-in design for live facilities, including de-bottlenecking and equipment replacement studies.",
+          "Failure Mode Effect Analysis (FMEA) and Finite Element Analysis (FEA) to validate design integrity.",
       },
       {
-        title: "Digital Twin & As-Built",
+        title: "WPS & WQT Development",
         description:
-          "Laser-scanned point clouds converted into intelligent models for planning and future modifications.",
+          "Welding Procedure Specification (WPS) and Welder Qualification Test (WQT) development.",
       },
     ],
     deliverables: [
@@ -99,32 +57,32 @@ export const services: Service[] = [
   },
   {
     slug: "maintenance",
-    title: "Maintenance",
+    title: "Construction, Installation and Maintenance",
     icon: "Wrench",
     summary:
-      "Planned turnarounds, shutdown execution and long-term maintenance contracts for producing assets.",
+      "Structural and pipeline construction, crane inspection and mechanical maintenance for producing assets.",
     intro:
-      "Unplanned downtime is the single largest controllable cost on a producing asset. We build maintenance programmes around criticality — not the calendar — combining condition monitoring with disciplined turnaround planning so that shutdown windows are as short and predictable as possible.",
+      "From structural and pipeline construction through to crane inspection, certified lifting equipment and mechanical maintenance, we keep producing assets built, installed and running to certification standard.",
     capabilities: [
       {
-        title: "Turnaround & Shutdown",
+        title: "Structural / Pipeline",
         description:
-          "Scope freeze, work pack preparation, critical-path scheduling and 24-hour execution crews.",
+          "Structural and pipeline construction and installation for onshore and offshore facilities.",
       },
       {
-        title: "Rotating Equipment",
+        title: "Crane Inspection & Maintenance",
         description:
-          "Overhaul, alignment and vibration analysis for pumps, compressors and gas turbines.",
+          "Overhead crane, offshore crane and port crane inspection, preventive/corrective maintenance and repair/refurbishment.",
       },
       {
-        title: "Valve & Pressure Systems",
+        title: "DNV Certified Lifting Equipment",
         description:
-          "On-site valve testing, recertification, hot tapping and leak sealing under pressure.",
+          "DNV certified baskets and containers for offshore lifting operations.",
       },
       {
-        title: "Preventive Programmes",
+        title: "Mechanical & Hydraulic Maintenance",
         description:
-          "CMMS-driven planned maintenance regimes with spare-parts strategy and reliability reporting.",
+          "Mechanical and hydraulic system maintenance and troubleshooting.",
       },
     ],
     deliverables: [
@@ -141,32 +99,27 @@ export const services: Service[] = [
   },
   {
     slug: "inspection",
-    title: "Inspection",
+    title: "Diesel Engine Service",
     icon: "ScanLine",
     summary:
-      "Non-destructive testing, asset integrity assessment and regulatory certification support.",
+      "Overhaul, installation, commissioning and troubleshooting for all types of diesel engines.",
     intro:
-      "Ageing infrastructure is the defining challenge for the region's producing fields. Our certified inspectors combine conventional and advanced NDT with risk-based inspection methodology, so that inspection effort is concentrated where the consequence of failure is highest.",
+      "Our technicians work on all types of diesel engines, from general overhaul through to equipment installation, commissioning and health checks, backed by hands-on troubleshooting when something needs to be diagnosed and fixed in the field.",
     capabilities: [
       {
-        title: "Advanced NDT",
+        title: "General / Top / Bottom Overhaul",
         description:
-          "Phased array ultrasonics, time-of-flight diffraction, eddy current and digital radiography.",
+          "General overhaul and top/bottom overhaul for all types of diesel engines.",
       },
       {
-        title: "Risk-Based Inspection",
+        title: "Installation, Commissioning & Inspection",
         description:
-          "Corrosion loop definition, degradation modelling and inspection interval optimisation.",
+          "Equipment installation, commissioning and inspection/health check.",
       },
       {
-        title: "Structural Integrity",
+        title: "Troubleshooting",
         description:
-          "Fitness-for-service assessment, remnant life calculation and repair scheme verification.",
-      },
-      {
-        title: "Certification Support",
-        description:
-          "Third-party liaison, statutory inspection scheduling and regulatory dossier preparation.",
+          "On-site diagnosis and troubleshooting to resolve diesel engine faults.",
       },
     ],
     deliverables: [
@@ -183,32 +136,37 @@ export const services: Service[] = [
   },
   {
     slug: "logistics",
-    title: "Logistics",
-    icon: "Container",
+    title: "Welding and NDT",
+    icon: "Flame",
     summary:
-      "Supply base operations, freight forwarding and materials management for remote energy operations.",
+      "Welding consumables, equipment trading, inspection, fabrication training and NDT for industrial assets.",
     intro:
-      "Equipment that arrives late is as costly as equipment that fails. We run supply base operations and controlled warehousing that keep critical spares traceable and available, and we handle the customs and permitting complexity of moving oilfield equipment across borders.",
+      "We support welding and fabrication operations end to end — trading consumables and equipment, running welding inspections and industrial training, and delivering non-destructive testing so that every weld is qualified and traceable.",
     capabilities: [
       {
-        title: "Supply Base Operations",
+        title: "Welding Consumables Trading",
         description:
-          "Quayside handling, backloading, container management and offshore sailing coordination.",
+          "Supply and trading of welding consumables for industrial fabrication.",
       },
       {
-        title: "Freight Forwarding",
+        title: "Welding Inspections",
         description:
-          "Air, sea and land freight including project cargo, oversized lifts and dangerous goods.",
+          "Welding inspection services to verify weld quality against specification.",
       },
       {
-        title: "Materials Management",
+        title: "Welding/Cutting Equipment Supply & Trading",
         description:
-          "Bonded and controlled warehousing with barcode traceability and preservation regimes.",
+          "Supply and trading of welding and cutting equipment.",
       },
       {
-        title: "Customs & Permitting",
+        title: "Welding & Fabrication Industrial Training",
         description:
-          "Import permits, temporary importation and duty exemption handling for oilfield equipment.",
+          "Industrial training programmes for welding and fabrication personnel.",
+      },
+      {
+        title: "NDT (DPI, MPI, UT and PAUT)",
+        description:
+          "Non-destructive testing including dye penetrant, magnetic particle, ultrasonic and phased array ultrasonic testing.",
       },
     ],
     deliverables: [
@@ -221,6 +179,93 @@ export const services: Service[] = [
       { value: "14,000 m²", label: "Warehousing capacity" },
       { value: "99.2%", label: "On-time delivery" },
       { value: "3", label: "Supply bases operated" },
+    ],
+  },
+  {
+    slug: "marine-subsea",
+    title: "Marine & Subsea Services",
+    icon: "Waves",
+    summary:
+      "Diver and ROV-supported pipeline, riser, hull and offshore construction work below the waterline.",
+    intro:
+      "Our marine and subsea teams work underwater on the same infrastructure our topside crews support onshore — pipelines, risers, hulls, moorings and marine civil works — combining commercial diving with inspection, construction and maintenance scopes.",
+    capabilities: [
+      {
+        title: "Pipeline & Riser Demolition, Recovery & Repair",
+        description:
+          "Underwater demolition, recovery and repair of pipelines and risers.",
+      },
+      {
+        title: "Underwater Cutting, Welding & Hull Cleaning",
+        description:
+          "Diver-performed underwater cutting, welding and hull cleaning.",
+      },
+      {
+        title: "Pipeline Pre-commissioning & Hydro Testing",
+        description:
+          "Pipeline pre-commissioning, flooding, cleaning and hydrostatic testing.",
+      },
+      {
+        title: "Propeller Polishing & Cathodic Protection Installation",
+        description:
+          "Propeller polishing and installation of cathodic protection systems.",
+      },
+      {
+        title: "SBM/SPM Inspection, Change-Out & Installation",
+        description:
+          "Inspection, change-out and installation of single buoy/single point mooring systems.",
+      },
+      {
+        title: "Marine Offshore Construction",
+        description:
+          "Marine offshore construction including jetty works, pile wrap and geo-fabric laying.",
+      },
+      {
+        title: "Hook-up & Topside Services",
+        description:
+          "Hook-up and topside services supporting marine and subsea campaigns.",
+      },
+      {
+        title: "Invasive Marine Species Inspection",
+        description:
+          "Inspection for invasive marine species on subsea structures and hulls.",
+      },
+    ],
+    deliverables: [
+      "Dive and ROV operations plan and method statements",
+      "Diver logs and inspection video/photo records",
+      "As-found and as-left condition reports",
+      "Marine campaign close-out dossier",
+    ],
+    stats: [
+      { value: "24/7", label: "Dive support availability" },
+      { value: "8", label: "Subsea capabilities offered" },
+    ],
+  },
+  {
+    slug: "hot-tapping",
+    title: "Hot Tapping",
+    icon: "Drill",
+    summary:
+      "Live connections to in-service piping without shutting down or depressurising the system.",
+    intro:
+      "Hot tapping lets us make new connections to piping while the system stays live — attaching a hot tap fitting by welding, then cutting through the pipe wall at the point of attachment with an appropriate hot tap machine, so production is never interrupted.",
+    capabilities: [
+      {
+        title: "Live Hot Tap Connections",
+        description:
+          "Hot Tap is the method of making connections to piping by attaching a Hot Tap fitting to the system, usually by welding, followed by cutting through the pipe wall at the point of attachment utilizing an appropriate hot tap machine.",
+      },
+    ],
+    deliverables: [
+      "Hot tap procedure and method statement",
+      "Fitting welding and NDT records",
+      "Machine setup and cutting records",
+      "Post-tap pressure test and close-out report",
+    ],
+    stats: [
+      { value: "0", label: "Production downtime required" },
+      { value: "24/7", label: "Crew availability" },
     ],
   },
 ];

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Phone, Siren } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 import { Container } from "@/components/site/layout";
 import { Logo } from "@/components/site/logo";
@@ -30,16 +30,6 @@ export function SiteFooter() {
               >
                 <Mail className="size-4 shrink-0 text-brand" />
                 {site.contact.email}
-              </a>
-              <a
-                href={`tel:${site.contact.emergency.replace(/\s/g, "")}`}
-                className="flex items-center gap-2.5 transition-colors hover:text-ink-foreground"
-              >
-                <Siren className="size-4 shrink-0 text-brand" />
-                <span>
-                  {site.contact.emergency}
-                  <span className="ml-1.5 text-xs">(24h emergency)</span>
-                </span>
               </a>
             </div>
           </div>

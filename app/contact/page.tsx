@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Building2, Mail, MapPin, Phone, Printer, Siren } from "lucide-react";
+import { Building2, Mail, MapPin, Phone, Printer } from "lucide-react";
 
 import { ContactForm } from "@/components/site/contact-form";
 import { Container, Section, SectionHeader } from "@/components/site/layout";
@@ -80,23 +80,6 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              <div className="rounded-2xl border border-brand/30 bg-brand/8 p-7">
-                <h2 className="flex items-center gap-2.5 text-xs font-semibold tracking-[0.16em] uppercase">
-                  <Siren className="size-4 text-brand-strong" />
-                  24-hour emergency
-                </h2>
-                <a
-                  href={`tel:${site.contact.emergency.replace(/\s/g, "")}`}
-                  className="mt-4 block font-mono text-xl font-semibold tracking-tight tabular-nums hover:underline"
-                >
-                  {site.contact.emergency}
-                </a>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  For incidents, emergency response and urgent support on active
-                  scopes. Answered around the clock, every day of the year.
-                </p>
-              </div>
-
               <div className="rounded-2xl border border-dashed border-border p-7">
                 <h2 className="text-xs font-semibold tracking-[0.16em] text-muted-foreground uppercase">
                   Response times
@@ -106,7 +89,6 @@ export default function ContactPage() {
                     { term: "General enquiries", detail: "1 working day" },
                     { term: "Requests for quotation", detail: "3 working days" },
                     { term: "Tender submissions", detail: "As per tender schedule" },
-                    { term: "Emergency call-out", detail: "Immediate" },
                   ].map((item) => (
                     <div
                       key={item.term}
